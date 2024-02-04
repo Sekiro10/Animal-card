@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background: black;
+    overflow: hidden;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    background: #926F34;
+    border-radius: 20px;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 380px;
+    transition: 0.5s;
+    transform: translateX(-50%);
+}
+
+.card:hover img {
+    height: 450px;
+    left: 90%;
+}
+
+.content {
+    position: relative;
+    width: 48%;
+    left: 20%;
+    text-transform: capitalize;
+    transition: 0.5s;
+    color: #fff;
+    opacity: 0;
+
+}
+
+.card:hover .content {
+    left: 54;
+    opacity: 1;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    margin-bottom: 20px;
+}
